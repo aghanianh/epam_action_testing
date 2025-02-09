@@ -8,6 +8,7 @@ jobs:
     name: build Node.js Docker Image and deploy to minikube
     steps:
     - uses: actions/checkout@v2
+    - uses: docker/setup-docker-action@v4
     - name: Start minikube
       uses: medyagh/setup-minikube@master
     - name: Try the cluster !
